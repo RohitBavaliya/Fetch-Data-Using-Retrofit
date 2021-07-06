@@ -1,15 +1,24 @@
 package com.example.restapiretrofit;
 
 public class ModelDataFetch {
-    String name, profession, image;
+    String id, name, profession, image;
 
     public ModelDataFetch() {
     }
 
-    public ModelDataFetch(String name, String profession, String image) {
+    public ModelDataFetch(String id, String name, String profession, String image) {
+        this.id = id;
         this.name = name;
         this.profession = profession;
         this.image = image;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {

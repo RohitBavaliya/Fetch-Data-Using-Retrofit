@@ -33,11 +33,11 @@ public class AddData extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // processData(userName.getText().toString(),userEmail.getText().toString(),userPassword.getText().toString());
+                 processAddData(userName.getText().toString(),userEmail.getText().toString(),userPassword.getText().toString());
             }
         });
     }
-    private void processData(String name, String email, String password) {
+    private void processAddData(String name, String email, String password) {
         // call getRegister Api
         Call<ResponseModel> call = ApiController.getInstance().getApi().getRegister(name, email, password);
         call.enqueue(new Callback<ResponseModel>() {
