@@ -30,7 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
         holder.userName.setText(fetchData.get(position).getName());
         holder.userProfession.setText(fetchData.get(position).getProfession());
         Glide.with(holder.userProfession.getContext())
-                .load("http://192.168.46.146/api/images/"+fetchData.get(position).getImage())
+                .load("http://192.168.93.146/api/images/"+fetchData.get(position).getImage())
                 .into(holder.userImage);
     }
 

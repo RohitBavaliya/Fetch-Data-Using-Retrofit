@@ -12,7 +12,7 @@ public class ApiController
     * 4. Step-4 : If ApiController object is null than create new object
     * 5. Step-5 : Call all Api
     * */
-    private final static String url = "http://192.168.46.146/api/";
+    private final static String url = "http://192.168.93.146/api/";
     private static ApiController apiController;
     private static Retrofit retrofit;
 
